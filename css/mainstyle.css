@@ -82,6 +82,13 @@ input[type=checkbox], label{display:none;}
     margin:0 auto;
     position:relative;}
 
+.content-right h3{font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: #444;}
+
+.content-right h3 em{color:#ff54b0;
+    font-family: 'Bad Script', cursive;}
+
 .content h2, .content-left h2, .content-right h2{font-size:18px;
     font-weight:500;
     color:deeppink;
@@ -94,6 +101,8 @@ input[type=checkbox], label{display:none;}
     line-height:22px;
     color:#7c7c7c;
     text-align:justify;}
+
+.content-right p, .content-left p{font-family: 'Source Code Pro', monospace;}
 
 .content img, .content-right img, .content-left img{border: #444 2px solid;}
 
@@ -118,7 +127,8 @@ input[type=checkbox], label{display:none;}
     max-width:600px;
     margin: auto auto 30px 30px;
     position:relative;
-    float: left;}
+    float: left;
+}
 
 .gallery{width:100%;
     max-width:1200px;
@@ -129,7 +139,7 @@ input[type=checkbox], label{display:none;}
 .gallery ul{list-style-type: none;
     padding:0;}
 
-.gallery li{ display: inline-block;
+.gallery li{ display: block;
     min-width: 200px;
     min-height: 200px;
     padding: 5px;

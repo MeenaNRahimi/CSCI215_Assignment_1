@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Seafaring Women: Home</title>
+<meta charset="utf-8">
+<meta name="description" content="Learn about the lives of various female pirates throughout history.">
+<link rel="stylesheet" href="final.css"> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Great+Vibes|PT+Serif|Trade+Winds" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+</head>
+
+
+<body>
+
+
+<div class = "topArea small">
+<header>
+	<div id = "logo"><a href="index.html"><img src="images/logo.gif" alt="logo" width="175" height="97"></a></div> 
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="history.html">History</a></li>
+			  <li class="parent"><a href="meet.html">Meet the Women</a>
+				<ul>
+				  <li><a href="bonny.html">Anne Bonny</a></li> 
+				  <li><a href="ching.html">Ching Shih</a></li>
+				  <li><a href="delahaye.html">Jacquotte Delahaye</a></li>
+				  <li><a href="read.html">Mary Read</a></li>
+				  <li><a href="teuta.html">Teuta of Illyria</a></li>
+				</ul>
+			  </li>
+			  <li><a href="sources.html">Resources</a></li>
+			</ul>
+		</nav>
+</header>
+</div>
+
+
+<div id="wrapper">
+<main>
+<br>
+<br>
+<br>
+<div class="slideshow">
+
+<div class="slides fade">
+  <div class="numbers">1 / 4</div>
+  <img src="images/slideshow/intro.png" alt="Seafaring Women">
+</div>
+
+<div class="slides fade">
+  <div class="numbers">2 / 4</div>
+  <img src="images/slideshow/teatu.jpg" alt="Queen Teuta">
+  <div class="text">Queen Teuta statue, Shkodër, Albania (Source: <a href="https://twitter.com/albaniahistory/status/540178404746997761" target="_blank">Twitter</a>)</div>
+</div>
+
+<div class="slides fade">
+  <div class="numbers">3 / 4</div>
+  <img src="images/slideshow/mary.jpg" alt="Mary Read">
+  <div class="text">Mary Read Disguised as a Man (Source: <a href="https://commons.wikimedia.org/wiki/File:Mary_Read_killing_her_antagonist_cph.3a00980.jpg" target="_blank">Wikimedia Commons</a>)</div>
+</div>
+
+<div class="slides fade">
+  <div class="numbers">3 / 4</div>
+  <img src="images/slideshow/chengSao.jpeg" alt="Cheng Sao">
+  <div class="text">Cheng I Sao (Source: <a href="https://www.history.com/news/history-lists/5-notorious-female-pirates/print" target="_blank">History.com</a>)</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#x219e;</a>
+<a class="next" onclick="plusSlides(1)">&#x21A0;</a>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+</div>
+
+<br>
+<br>
+<hr>
+
+<div id="leftColumn">
+<h1>"I am sorry to see you here, but if you had fought like a man, you needn't be hanged like a dog."</h1>
+<p>-Anne Bonny to "Calico Jack" Rackham after he decided to surrender to pirate hunters rather than fight.</p>
+
+</div>
+
+<div id="centerColumn">
+<h1><em> Meet the Pirates </em></h1>
+<p>Historically, women have been financially dependent, undereducated, and oppressed by a patriarchal society. These empowered women broke away from the society that treated them as if they were weak children, and then walked into the life of dangerous pirates. Click below to learn more about the pirate queen, captains, and sailors that left behind a legacy of being women in charge.<br><br> <a href='meet.html' class='button'>Learn More</a><br><br></p>
+</div>
+
+<div id="rightColumn">
+<h1>Did you know?</h1>
+<p>The most famous pirate in history was a woman! Ching Shih commanded over 1,800 pirate ships, and an estimated 80,000 men. In comparison, Blackbeard commanded four ships and only 300 pirates within the same century.</p>
+</div>
+
+<div id="wideColumn">
+<h3><i>Since the beginning of time, the sea has been seen as male dominated. Pirates once considered it bad luck to have a woman aboard the ship, due to the idea that they distracted the men. It was said that such behavior would anger the uncontrolled seas that could "take revenge" on the ship. Oddly enough, naked women were completely allowed on board!</i> <br><br>
+<em>Want to learn more? Click below!</em>
+<br><br> <a href='history.html' class='button2'>Learn More</a></h3> 
+
+</div>
+</main>
+</div>
+
+<footer>
+<p>Copyright © 2018 Meena Rahimi. Email <a href="mailto:rahimimn@g.cofc.edu">here.</a><br>Other product and company names shown may be trademarks of their respective owners.<br><b>For more reading material:</b> click <a href="sources.html" target="_blank">here</a>.</p><br>
+
+
+</footer>
+<script>
+
+var nav = document.querySelector('.topArea');
+var position = 0;
+
+window.addEventListener('scroll', function(){
+  if(position < window.pageYOffset) {
+    nav.classList += ' up';
+    position = window.pageYOffset;
+  } else {
+    nav.classList = 'topArea small'
+    position = window.pageYOffset;
+  }
+})
+
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+	showSlides(slideIndex += n);}
+
+function currentSlide(n) {
+	showSlides(slideIndex = n);}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+
+</script>
+
+
+
+
+</html>

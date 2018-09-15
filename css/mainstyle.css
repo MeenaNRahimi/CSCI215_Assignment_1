@@ -1,0 +1,199 @@
+/*
+font-family: 'Source Code Pro', monospace;
+font-family: 'Poiret One', cursive;
+font-family: 'VT323', monospace;
+font-family: 'Bad Script', cursive;
+*/
+
+
+
+* {text-decoration: none;}
+
+body{margin:0;
+    padding:0;}
+
+.navBar{width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    display:table;
+    position:relative;}
+
+h1{margin:0 auto;
+    display:table; font-size:26px;
+    padding:40px 0;
+    color:deeppink;
+    text-align:center;}
+
+.top{width:100%;
+    display:table;
+    background-color:black;
+    margin-bottom:50px;}
+
+#logo{margin: 10px;
+    float: left;
+    width: 300px;
+    height: 90px;
+    background: url("../images/rsz_logo2.png") no-repeat center;}
+
+nav{width:auto;
+    float:right;}
+
+nav ul{display:table;
+    float:right;}
+
+nav ul li{float:left;}
+
+nav ul li:last-child{padding-right:0;}
+
+nav ul li a{color:white;
+    font-size:18px;
+    font-family: 'VT323', monospace;
+    padding: 25px 20px;
+    display:inline-block;
+    transition: all 0.5s ease 0s;}
+
+nav ul li a:hover{color:#444;
+    transition: all 0.5s ease 0s;}
+
+nav ul li a:hover i{color:#444;
+    transition: all 0.5s ease 0s;}
+
+nav ul li a i{padding-right:10px;
+    color:deeppink;
+    transition: all 0.5s ease 0s;}
+
+.currentPage {color: deeppink;}
+
+.getMenu ul{display:table;
+    width:25px;}
+
+.getMenu ul li{width:100%;
+    height:3px;
+    background-color: white;
+    margin-bottom:4px;}
+
+.getMenu ul li:last-child{margin-bottom:0;}
+
+input[type=checkbox], label{display:none;}
+
+.content{display:table;
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;}
+
+.content h2{font-size:18px;
+    font-weight:500;
+    color:deeppink;
+    border-bottom:1px solid black;
+    display:table;
+    padding-bottom:10px;
+    margin-bottom:10px;}
+
+.content p{font-size:14px;
+    line-height:22px;
+    color:#7c7c7c;
+    text-align:justify;}
+
+.gallery{width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    display:table;
+    position:relative;}
+
+.gallery ul{list-style-type: none;
+    padding:0;}
+
+.gallery li{ display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 5px;
+    background-color: rgba(68, 68, 68, 0.4);
+    text-align:center;
+    display: block;
+    margin: 2px auto;
+    width: 50%;}
+
+
+footer{display:table;
+    padding-bottom:30px;
+    width:100%;
+    background-color: #ff54b0;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    color: white;}
+
+footer a:link {color: black}
+
+footer a:visited {background-color: deeppink;
+    color:white;}
+
+footer a:hover {color: white;
+    font-size: 20px;}
+
+@media only screen and (max-width: 1440px) {
+    .navBar{max-width:95%;}
+}
+
+@media only screen and (max-width: 980px) {
+    .top{padding:20px 0;}
+
+    #logo{padding:0;}
+
+    input[type=checkbox] {position: absolute;
+        top: -9999px;
+        left: -9999px;
+        background:none;}
+
+    label {float:right;
+        padding:8px 0;
+        display:inline-block;
+        cursor:pointer; }
+
+    input[type=checkbox]:checked ~ nav {display:block;}
+
+    nav{display:none;
+        position:absolute;
+        right:10px;
+        top:53px;
+        background-color:black;
+        padding:0;
+        z-index:99;}
+
+    nav ul{width:auto;}
+
+    nav ul li{float:none;
+        padding:0;
+        width:100%;
+        display:table;}
+
+    nav ul li a{color:#FFF;
+        font-size:15px;
+        padding:10px 20px;
+        display:block;
+        border-bottom: 1px solid rgba(225,225,225,0.1);}
+
+    nav ul li a i{color:white;
+        padding-right:13px;}
+}
+
+@media only screen and (max-width: 980px) {
+    .content{width:90%;}
+}
+
+
+@media only screen and (max-width: 480px) {
+    .navBar{max-width: 90%;}
+    .content{max-width: 90%}
+}
+
+@media only screen and (max-width: 360px) {
+    h1{font-size:20px;}
+    label{padding:5px 0;}
+    #logo{font-size: 20px;}
+    nav{top:47px;}
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {padding: 20px 0}
+}

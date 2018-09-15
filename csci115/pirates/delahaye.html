@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Jacquotte Delahaye</title>
+<meta charset="utf-8">
+<meta name="description" content="Learn about the lives of various female pirates throughout history.">
+<link rel="stylesheet" href="final.css"> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Great+Vibes|PT+Serif|Trade+Winds" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" />
+</head>
+
+
+<body>
+
+
+<div class = "topArea small">
+<header>
+	<div id = "logo"><a href="index.html"><img src="images/logo.gif" alt="logo" width="175" height="97"></a></div> 
+		<nav>
+			<ul>
+			  <li><a href="index.html">Home</a></li>
+			  <li><a href="history.html">History</a></li>
+			  <li class="parent"><a href="meet.html">Meet the Women</a>
+				<ul>
+				  <li><a href="bonny.html">Anne Bonny</a></li> 
+				  <li><a href="ching.html">Ching Shih</a></li>
+				  <li><a href="delahaye.html">Jacquotte Delahaye</a></li>
+				  <li><a href="read.html">Mary Read</a></li>
+				  <li><a href="teuta.html">Teuta of Illyria</a></li>
+				</ul>
+			  </li>
+			  <li><a href="sources.html">Resources</a></li>
+			</ul>
+		</nav>
+</header>
+</div>
+
+
+<div id="wrapper">
+<main>
+
+<br>
+<br>
+<br>
+<br>
+
+<button onclick="topFunction()" id="top" title="Go to Top">&#x219F;</button>
+
+<h2>Jacquotte Delahaye</h2>
+<div class="paragraph">
+<img src="images/delahaye.jpg" class="imgtop" alt="Jacquotte Delahaye"><h3>Also known as "Back from the Dead Red"</h3>
+<p>Not much is known about Jacquotte Delahaye, but she is said to be the subject of many legendary stories. It needs to be mentioned that there are no primary sources that contain evidence that Delahaye was a real person. Stories of her adventures are attributed to Leon Treich, a French writer from the 1940s.<br>
+Jacquotte Delahaye was a Caribbean pirate during the seventeenth century. It was said that she had hair the color of blood that cascaded down her back. Her beauty was considered lethal, and was easily recognizable. She was of Haitian and French descent. Her father was French, while her mother was Haitian. Not a lot is known of her parents, expect that her mother died giving birth to Jacquotte's brother who suffered from a mental illness, and her father was killed. So, that left Jacquotte to care for her younger brother by herself, and she found no better way to provide for him than becoming a pirate. <br>
+Teaming up with Anne Dieu-le-Veut, a French criminal, Delahaye became a prominent Caribbean pirate. While Anne Dieu-le-Veut married twice, Jacquotte never did. It is believed that she found love a difficult thing to grasp or understand.She once said, “I couldn’t love a man who commands me- any more than I could love one who lets himself be commanded by me.” Although, it is suggested that she may have birthed a daughter, Dinah Delahaye, who shared her mother's striking red hair, and who grew up to become a master swordswoman, and pirate commanding a small fleet of ships. <br>
+After coming to close to being caught by the law, Delahaye faked her own death. However, she did not allow such danger to stop her from a life of piracy. Disguised as a man, like many other female pirates, Jacquotte lasted a few years before her blazing hair was too recognizable. She came back into the light of the public and earned the nickname "Back from the Dead Red." The rest of her life is a bit of a mystery to historians. While there is not a lot to mention about Jacquotte Delahaye, her beauty and bravery inspires many. People of the public have created depictions of what she may have looked like, and several novels have been written about women resembling her.</p>
+</div>
+
+</main>
+</div>
+<footer>
+<p>Copyright © 2018 Meena Rahimi. <br>Other product and company names shown may be trademarks of their respective owners.<br><b>For more reading material:</b> click <a href="sources.html" target="_blank">here</a>.</p><br>
+
+
+
+</footer>
+
+<script>
+
+var nav = document.querySelector('.topArea');
+var position = 0;
+
+window.addEventListener('scroll', function(){
+  if(position < window.pageYOffset) {
+    nav.classList += ' up';
+    position = window.pageYOffset;
+  } else {
+    nav.classList = 'topArea small'
+    position = window.pageYOffset;
+  }
+})
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("top").style.display = "block";
+    } else {
+        document.getElementById("top").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+</html>

@@ -82,7 +82,7 @@ input[type=checkbox], label{display:none;}
     margin:0 auto;
     position:relative;}
 
-.content h2{font-size:18px;
+.content h2, .content-left h2, .content-right h2{font-size:18px;
     font-weight:500;
     color:deeppink;
     border-bottom:1px solid black;
@@ -90,10 +90,35 @@ input[type=checkbox], label{display:none;}
     padding-bottom:10px;
     margin-bottom:10px;}
 
-.content p{font-size:14px;
+.content p, .content-right p, .content-left p{font-size:14px;
     line-height:22px;
     color:#7c7c7c;
     text-align:justify;}
+
+.content img, .content-right img, .content-left img{border: #444 2px solid;}
+
+.content a:link, .content-left a:link, .content-right a:link{color: black;}
+
+.content a:visited, .content-left a:visited, .content-right a:visited {color: black;}
+
+.content a:hover, .content-right a:hover, .content-left a:hover {color: white;
+    background-color: black;
+    font-size: 20px;}
+
+.content-right{display:table;
+    width:100%;
+    max-width:600px;
+    margin: 30px auto 30px 30px;
+    position:relative;
+    float: right;}
+
+
+.content-left{display:table;
+    width:100%;
+    max-width:600px;
+    margin: auto auto 30px 30px;
+    position:relative;
+    float: left;}
 
 .gallery{width:100%;
     max-width:1200px;
@@ -110,7 +135,6 @@ input[type=checkbox], label{display:none;}
     padding: 5px;
     background-color: rgba(68, 68, 68, 0.4);
     text-align:center;
-    display: block;
     margin: 2px auto;
     width: 50%;}
 
@@ -185,6 +209,7 @@ footer a:hover {color: white;
 @media only screen and (max-width: 480px) {
     .navBar{max-width: 90%;}
     .content{max-width: 90%}
+    .content-left, .content-right{float:none;}
 }
 
 @media only screen and (max-width: 360px) {
@@ -192,8 +217,10 @@ footer a:hover {color: white;
     label{padding:5px 0;}
     #logo{font-size: 20px;}
     nav{top:47px;}
+    .content-left, .content-right{float:none;}
 }
 
 @media only screen and (max-width: 320px) {
     h1 {padding: 20px 0}
+    .content-left, .content-right{float:none;}
 }
